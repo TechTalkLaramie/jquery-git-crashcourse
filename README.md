@@ -89,6 +89,25 @@ alert('Hello world')
 
 Refresh your web browser and you should see an alert dialog pop up that says Hello World
 
+## jQuery Hello World
+
+Let's dive into jQuery head first. Let's add a twist to our previous Hello World and make 
+it so if you press a button, it'll say Hello.
+
+Double click 2-hello-jquery.html to open it up in your browser.
+
+Right click 2-hello-jquery.html to open it up in your text editor of choice.
+
+OK, let's add this to our script section
+
+```
+    $(function() {
+      $('#press-me').click(function() {
+        alert('hello world')
+      })
+    })
+```
+
 
 
 
