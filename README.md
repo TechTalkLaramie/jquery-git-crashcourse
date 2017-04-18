@@ -108,6 +108,23 @@ OK, let's add this to our script section
     })
 ```
 
+## Todo list
+
+An easy way to get started with most JS frameworks is a todo list app. It'll be very simple
+but let's give it a shot.  Open up 3-todo.html in your web browser and your text editor.
+
+Add this to the script section
+
+```
+$(function() {
+   $('#add-todo').click(function() {
+     $('#todo-list').append('<li>'+$('#new-todo').val()+'</li>')
+     $('#new-todo').val('')
+   })
+ })
+```
+
+
 
 
 

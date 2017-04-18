@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Todo</title>
+  </head>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script language="javascript">
+    // This is where we're going to put our hello world
+    $(function() {
+      $('#add-todo').click(function() {
+        $('#todo-list').append('<li>'+$('#new-todo').val()+'</li>')
+        $('#new-todo').val('')
+      })
+    })
+  </script>
+  <body>
+    <h1>Todo list</h1>
+    <ul id="todo-list">
+      <li>First todo</li>
+    </ul>
+    <input type="name" id="new-todo"><button id="add-todo">Add Todo</button>
+  </body>
+</html>
