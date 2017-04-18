@@ -33,6 +33,16 @@ Open git bash and run git --version
 For both of these situations you should see the version of git you have installed.
 Leave this window open we're going to use it again soon.
 
+## Setup your name and email with Git
+If your installer didn't already do this for you from the command line run
+
+```
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
+
+Of course replace things with your actual name and email address
+
 ## Sign up for GitHub
 
 You can think of GitHub as being like the social network for coders. It's where we share
