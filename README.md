@@ -124,6 +124,58 @@ $(function() {
  })
 ```
 
+## Collaboration
+
+OK, we've learned a bit about jQuery, let's work on our git-fu. Open up 4-collab.html in
+your text editor and your browser. We're going to all contribute to this file by adding 
+some information about ourselves. You can think of this as a digital sign in sheet.
+
+We're not going to write a ton of code in this section. We're going to use a common
+development pattern called.... copying and pasting :)
+
+So, you can see on here where I put my info. You can also see below that, I added
+a commented section (between the <!-- and the -->. Copy everything between here and 
+paste it after the my closing </li> tag. Save the file and head back over to the command
+prompt.
+
+```
+git status
+```
+
+This is going to show us what's different between our code and the code upstream (on 
+GitHub). We only want to commit the changes to this file so let's stage that to 
+be committed
+
+```
+git add 4-collab.html
+git status
+```
+
+We can see that this is staged for commit now. Let's commit it.
+
+```
+git commit -m "Added some info for MY NAME GOES HERE"
+```
+
+You can see we keep track of all our changes with a clever commit message that
+describes whatever we changed. We're not quite done because we actually need to
+push this back to github. We can do that with
+
+```
+git push origin master
+```
+
+You'll probably need to enter in your GitHub username and password here.
+
+OK, now let's navigate back to your forked copy of the repo. We should be able
+to see your commit and your changes. Sweet. But we still haven't really
+collaborated. You saw we pushed to GitHub. Let's submit a pull request so the
+repo owner (TechTalkLaramie) can pull our requests upstream.
+
+From our repo on the web, click Pull Requests. You should then be able to click
+Create Pull Request. From here I'll show you how I merge your requested changes
+in.
+
 
 
 
